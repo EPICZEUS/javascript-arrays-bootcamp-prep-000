@@ -4,7 +4,7 @@ function addElementToBeginningOfArray(array, ele) {
   return [ele, ...array];
 }
 
-function destructiveAddElementToBeginningOfArray(array, ele) {
+function destructivelyAddElementToBeginningOfArray(array, ele) {
   array.unshift(ele);
   return array;
 }
@@ -13,7 +13,7 @@ function addElementToEndOfArray(array, ele) {
   return [...array, ele];
 }
 
-function destructiveAddElementToEndOfArray(array, ele) {
+function destructivelyAddElementToEndOfArray(array, ele) {
   array.push(ele);
   return array;
 }
