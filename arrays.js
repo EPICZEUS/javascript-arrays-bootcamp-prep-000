@@ -10,11 +10,12 @@ function destructiveAddElementToBeginningOfArray(array, ele) {
 }
 
 function addElementToEndOfArray(array, ele) {
-  return array.push(ele);
+  return [...array, ele];
 }
 
 function destructiveAddElementToEndOfArray(array, ele) {
-  return [...array, ele];
+  array.push(ele);
+  return array;
 }
 
 function accessElementInArray(array, i) {
